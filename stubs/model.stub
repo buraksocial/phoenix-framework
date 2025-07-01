@@ -1,0 +1,46 @@
+<?php
+
+namespace App\Models;
+
+// use Database\Traits\SoftDeletes;
+// use Database\Traits\Sluggable;
+
+/**
+ * {{className}} Modeli
+ *
+ * `{{tableName}}` veritabanı tablosunu temsil eder.
+ */
+class {{className}}
+{
+    // use SoftDeletes, Sluggable;
+
+    /**
+     * Bu modelin ilişkili olduğu veritabanı tablosu.
+     * @var string
+     */
+    protected string $table = '{{tableName}}';
+
+    /*
+    |--------------------------------------------------------------------------
+    | Model Özellikleri (Properties)
+    |--------------------------------------------------------------------------
+    |
+    | Buraya veritabanı tablonuzdaki sütunlara karşılık gelen
+    | public özellikleri ekleyebilirsiniz.
+    |
+    | public ?int $id = null;
+    | public string $name;
+    | public ?string $created_at;
+    | public ?string $updated_at;
+    |
+    */
+    
+    public function __construct(array $attributes = [])
+    {
+        foreach ($attributes as $key => $value) {
+            if (property_exists($this, $key)) {
+                $this->$key = $value;
+            }
+        }
+    }
+}

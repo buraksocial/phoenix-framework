@@ -1,0 +1,27 @@
+<?php
+
+use Core\Database\DriverInterface;
+
+/**
+ * {{className}} Migration
+ */
+class {{className}}
+{
+    /**
+     * Migration'ı çalıştırır (ileri yönlü).
+     * @param DriverInterface $db
+     */
+    public function up(DriverInterface $db)
+    {
+        // $db->execute("CREATE TABLE ...");
+    }
+
+    /**
+     * Migration'ı geri alır (geri yönlü).
+     * @param DriverInterface $db
+     */
+    public function down(DriverInterface $db)
+    {
+        // $db->execute("DROP TABLE IF EXISTS ...");
+    }
+}

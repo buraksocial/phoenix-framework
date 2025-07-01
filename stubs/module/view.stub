@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{moduleName}} Modülü</title>
+</head>
+<body>
+    <h1>{{moduleName}} Modülüne Hoş Geldiniz!</h1>
+    <p>Bu içerik, /modules/{{moduleName}}/Views/index.php dosyasından geliyor.</p>
+</body>
+</html>

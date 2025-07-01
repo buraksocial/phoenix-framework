@@ -1,0 +1,33 @@
+<?php
+
+namespace {{namespace}};
+
+/**
+ * {{className}}
+ *
+ * Bu servis, ... ile ilgili iş mantığını yönetir.
+ */
+class {{className}}
+{
+    /**
+     * {{className}} oluşturulurken, DI Konteyneri tarafından
+     * gerekli olan diğer servisler veya sınıflar buraya enjekte edilebilir.
+     *
+     * public function __construct(AnotherService $anotherService)
+     * {
+     * // ...
+     * }
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Örnek bir servis metodu.
+     */
+    public function handle()
+    {
+        // İş mantığınızı buraya yazın...
+    }
+}

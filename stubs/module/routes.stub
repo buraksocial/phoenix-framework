@@ -1,0 +1,8 @@
+<?php
+
+// {{moduleName}} modülüne ait rotalar.
+// Bu dosya, ana router tarafından /{{moduleNameLower}} prefix'i ile yüklenir.
+
+use Modules\{{moduleName}}\Controllers\{{moduleName}}Controller;
+
+$router->get('/', [{{moduleName}}Controller::class, 'index']);

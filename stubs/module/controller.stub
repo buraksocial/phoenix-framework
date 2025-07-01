@@ -1,0 +1,27 @@
+<?php
+
+namespace Modules\{{moduleName}}\Controllers;
+
+use Core\ViewManager;
+
+class {{moduleName}}Controller
+{
+    /**
+     * @var ViewManager
+     */
+    protected $view;
+
+    public function __construct(ViewManager $view)
+    {
+        $this->view = $view;
+    }
+
+    /**
+     * Modülün ana sayfasını gösterir.
+     */
+    public function index()
+    {
+        // Modülün view dosyasını namespace ile çağır
+        echo $this->view->render('{{moduleName}}::index');
+    }
+}

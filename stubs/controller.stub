@@ -1,0 +1,30 @@
+<?php
+
+namespace {{namespace}};
+
+use Core\ViewManager;
+use DI\Container;
+
+class {{className}}
+{
+    protected $view;
+    protected $container;
+
+    /**
+     * {{className}} oluşturulurken, DI Konteyneri tarafından
+     * gerekli servisler otomatik olarak enjekte edilebilir.
+     */
+    public function __construct(ViewManager $view, Container $container)
+    {
+        $this->view = $view;
+        $this->container = $container;
+    }
+
+    /**
+     * Örnek bir metot.
+     */
+    public function index()
+    {
+        // ...
+    }
+}
